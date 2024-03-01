@@ -1,0 +1,587 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Adjusted padding for responsiveness */
+    position: absolute;
+    /* Position relative to the header */
+    width: 100%;
+    /* Full width of the header */
+    top: 0;
+    /* Align to the top of the header */
+
+}
+
+nav .logo {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Reduced letter-spacing for smaller screens */
+    font-weight: 700;
+    font-size: 18px;
+    /* Reduced font-size for smaller screens */
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+    /* Adjusted margin for smaller screens */
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    /* Reduced font-size for smaller screens */
+    font-weight: 500;
+    letter-spacing: 1px;
+    /* Reduced letter-spacing for smaller screens */
+    transition: all 0.3s ease;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    /* Adjusted padding for responsiveness */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    /* Reduced font-size for smaller screens */
+    margin-bottom: 15px;
+    /* Reduced margin for smaller screens */
+}
+
+.hero p {
+    font-size: 1em;
+    /* Reduced font-size for smaller screens */
+    margin-bottom: 20px;
+    /* Reduced margin for smaller screens */
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Main section styles */
+main {
+    padding: 20px;
+}
+
+/* About section styles */
+#about {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.about-text h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+    /* Limiting the image width */
+    overflow: hidden;
+    /* Hide overflowing parts */
+    position: relative;
+}
+
+.about-image img {
+    float: right;
+    margin: 20px;
+    max-width: 70%;
+    /* Ensure the image doesn't exceed its container's width */
+    max-height: 70%;
+    /* Ensure the image doesn't exceed its container's height */
+    width: auto;
+    /* Let the browser determine the width based on max-width */
+    height: auto;
+    /* Let the browser determine the height based on max-height */
+    object-fit: contain;
+    /* Maintain the image's aspect ratio while fitting it into the container */
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+
+/* Adding a hover effect */
+.about-image img:hover {
+    transform: scale(1.1);
+    /* Scale the image on hover */
+}
+
+/* Adding animations */
+.about-text {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.about-image {
+    animation: slideInRight 1s ease forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/* Services section styles */
+#services h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service-box {
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Adding hover effects */
+.service-box:hover {
+    transform: translateY(-5px);
+    /* Move the box slightly up on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Add a shadow effect on hover */
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.service-box h2 {
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    /* Adding transition for color change */
+}
+
+/* Service box description styles */
+.service-box p {
+    color: #555;
+    transition: color 0.3s ease;
+    /* Adding transition for color change */
+}
+
+/* Service box hover effects */
+.service-box:hover h2 {
+    color: #4CAF50;
+    /* Change heading color on hover */
+}
+
+.service-box:hover p {
+    color: #777;
+    /* Change paragraph color on hover */
+}
+
+/* Adding animations */
+.service-box {
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Portfolio section styles */
+#portfolio {
+    padding: 50px 0;
+}
+
+#portfolio h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #45a049;
+}
+
+/* Portfolio item styles */
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Animation classes */
+.animate-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contact section styles */
+#contact {
+    padding: 50px 0;
+}
+
+#contact h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    /* Adjust as needed */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-about,
+.footer-contact,
+.footer-links {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+.footer-about,
+.footer-contact,
+.footer-links {
+    margin-bottom: 30px;
+}
+
+.footer-about h3,
+.footer-contact h3,
+.footer-links h3 {
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #45a049;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-about,
+    .footer-contact,
+    .footer-links {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+    .about-text,
+    .about-image {
+        width: 100%;
+        float: none;
+    }
+
+    nav {
+        padding: 0 10px;
+        /* Further reduced padding for smaller screens */
+    }
+
+    nav .logo {
+        font-size: 16px;
+        /* Further reduced font-size for smaller screens */
+        letter-spacing: 1px;
+        /* Further reduced letter-spacing for smaller screens */
+    }
+
+    nav ul li {
+        margin: 0 5px;
+        /* Further reduced margin for smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        /* Further reduced font-size for smaller screens */
+        letter-spacing: 0.5px;
+        /* Further reduced letter-spacing for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        /* Further reduced font-size for smaller screens */
+        margin-bottom: 10px;
+        /* Further reduced margin for smaller screens */
+    }
+
+    .hero p {
+        font-size: 0.9em;
+        /* Further reduced font-size for smaller screens */
+        margin-bottom: 15px;
+        /* Further reduced margin for smaller screens */
+    }
+
+
+    .about-image {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-image img {
+        float: none;
+        margin: 20px auto;
+        max-width: 100%;
+    }
+
+    .about-text,
+    .about-image {
+        padding: 0;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    #portfolio img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .portfolio-filters {
+        font-size: 5px;
+    }
+
+    .filter-btn {
+        padding: 4px 10px;
+        margin: 0 2px;
+    }
+
+    .service-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .portfolio-filters {
+        flex-direction: column;
+    }
+
+    .portfolio-filters button[data-category="all"] {
+        display: none;
+    }
+
+    .filter-btn {
+        padding: 4px 10px;
+        margin: 0 2px;
+        margin: 10px;
+    }
+}

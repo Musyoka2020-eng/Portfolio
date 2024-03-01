@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Musyoka</title>
+    <link rel="stylesheet" href="public/assets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>Steve Musyoka</h4>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Greetings, fellow explorer!</h1>
+            <p>Welcome to my digital abode</p>
+            <a href="#contact" class="cta">Let's create together</a>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>About me</h1>
+                    <p>Hello there! I'm a graduate from Mount Kenya University
+                        with a second-class honors degree in Bachelor of Science
+                        in Information Technology, having graduated in August
+                        2023. I have a strong passion for programming and have
+                        delved into various languages, including PHP and
+                        JavaScript.</p>
+                    <a href="#services" class="cta">View services</a>
+                </div>
+                <div class="about-image">
+                    <img src="public/images/steve.jpg" alt="Steve Musyoka">
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h1>Services</h1>
+            <div class="service-container">
+                <div class="service-box">
+                    <img src="public/images/website.jpg" alt="Website design">
+                    <h2>Website Design</h2>
+                    <p>Create stunning and user-friendly websites tailored to
+                        your needs. From simple landing pages to complex
+                        e-commerce platforms, we design and develop websites
+                        that elevate your online presence and drive engagement.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <img src="public/images/mobile.jpg"
+                        alt="Mobile App Development">
+                    <h2>Mobile App Development</h2>
+                    <p>Transform your ideas into powerful mobile applications.
+                        Our experienced team develops native and cross-platform
+                        apps for iOS and Android devices, focusing on intuitive
+                        user interfaces and seamless performance.</p>
+                </div>
+                <div class="service-box">
+                    <img src="public/images/seo.jpg"
+                        alt="Search Engine Optimization (SEO)">
+                    <h2>Search Engine Optimization (SEO)</h2>
+                    <p>Improve your website's visibility and attract more
+                        organic traffic with our SEO services. We employ proven
+                        strategies to optimize your site's content, structure,
+                        and performance, ensuring higher rankings on search
+                        engine results pages.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h1>Projects</h1>
+            <div class="portfolio-filters">
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="web">Web
+                    Design</button>
+                <button class="filter-btn" data-category="graphic">Graphic
+                    Design</button>
+                <button class="filter-btn" data-category="ui">UI/UX
+                    Design</button>
+                <!-- Add more buttons for different categories as needed -->
+            </div>
+            <div class="portfolio-items">
+                <div class="portfolio-item" data-category="web">
+                    <img src="public/images/portfolio-1.jpg"
+                        alt="Web Design Project">
+                </div>
+                <div class="portfolio-item" data-category="graphic">
+                    <img src="public/images/portfolio-2.jpg"
+                        alt="Graphic Design Project">
+                </div>
+                <div class="portfolio-item" data-category="ui">
+                    <img src="public/images/portfolio-3.jpg"
+                        alt="UI/UX Design Project">
+                </div>
+                <!-- Add more portfolio items with appropriate data-category attribute -->
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <form action="index.html" method="post">
+                <input type="text" name="name" placeholder="Full name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="submit" value="Send message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>I am passionate person dedicated to creating innovative
+                    solutions that empower businesses and individuals to succeed
+                    online.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1-123-456-7890</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 YourWebsite. All rights reserved. Designed by Steve
+                Musyoka</p>
+        </div>
+    </footer>
+    <script src="public/assets/jquery-3.7.1.min.js"></script>
+    <script src="public/assets/scripts.js"></script>
+</body>
+</html>
